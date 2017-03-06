@@ -1,14 +1,15 @@
 package practice3_1;
 
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class MathWork {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-         InputTest();
+         //InputTest();
          //RandomTest();
-         
+         Datet();
 	}
 	public static void  InputTest()
 	{int right=0;
@@ -19,7 +20,7 @@ public class MathWork {
 			a13=(int) (Math.random()*10)-5;
 			a2=-a13-a12;
 			a3=a12*a13;
-			System.out.println("x2+"+a2+"x+"+a3+"=0");
+			System.out.println("x^2+"+a2+"x+"+a3+"=0");
 	        Scanner input = new Scanner(System.in);
 	        
 	        System.out.println("请输入第一个解");
@@ -48,5 +49,8 @@ public class MathWork {
 		    System.out.println(a); 
 		} 
 	}
-		
+    public static void Datet(){
+    	TimeZone tz=TimeZone.getDefault();
+    	System.out.println("sun.util.calendar.ZoneInfo[id=Asia/Xian,offset=28800000,dstSavings=0,useDaylight=false,transitions=19,lastRule=null]");
+    }
 	}
